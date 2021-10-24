@@ -24,14 +24,15 @@ class ViewController: UIViewController {
         greenSlider.value = 1
         blueSlider.minimumTrackTintColor = .blue
         blueSlider.value = 1
-        redLabel.text = String(redSlider.value)
-        greenLabel.text = String(greenSlider.value)
-        blueLabel.text = String(blueSlider.value)
+        redLabel.text = "Red: \(redSlider.value)"
+        greenLabel.text = "Green: \(greenSlider.value)"
+        blueLabel.text = "Blue: \(blueSlider.value)"
+        viewColor.layer.cornerRadius = 10
     }
     @IBAction func sliderAction(_ sender: UISlider) {
-        redLabel.text = String(redSlider.value)
-        greenLabel.text = String(greenSlider.value)
-        blueLabel.text = String(blueSlider.value)
+        redLabel.text = "Red: \(redSlider.value)"
+        greenLabel.text = "Green: \(greenSlider.value)"
+        blueLabel.text = "Blue: \(blueSlider.value)"
 
         let red = CGFloat(redSlider.value/1)
         let green = CGFloat(greenSlider.value/1)
