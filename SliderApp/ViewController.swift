@@ -19,8 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         redSlider.minimumTrackTintColor = .red
+        redSlider.value = 1
         greenSlider.minimumTrackTintColor = .green
+        greenSlider.value = 1
         blueSlider.minimumTrackTintColor = .blue
+        blueSlider.value = 1
         redLabel.text = String(redSlider.value)
         greenLabel.text = String(greenSlider.value)
         blueLabel.text = String(blueSlider.value)
@@ -29,8 +32,15 @@ class ViewController: UIViewController {
         redLabel.text = String(redSlider.value)
         greenLabel.text = String(greenSlider.value)
         blueLabel.text = String(blueSlider.value)
+
+        let red = CGFloat(redSlider.value/1)
+        let green = CGFloat(greenSlider.value/1)
+        let blue = CGFloat(blueSlider.value/1)
+        viewColor.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
+        }
+    
     }
     
 
-}
+
 
