@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-PF-udu">
-                                <rect key="frame" x="40" y="79" width="334" height="128"/>
+                                <rect key="frame" x="20" y="79" width="374" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="BO4-9K-O74"/>
@@ -87,8 +87,8 @@
                         <constraints>
                             <constraint firstItem="vMu-Hc-jEx" firstAttribute="top" secondItem="WXp-PF-udu" secondAttribute="bottom" constant="20" id="0M8-qB-eaU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vMu-Hc-jEx" secondAttribute="trailing" constant="20" id="7KM-Iy-FHV"/>
-                            <constraint firstItem="WXp-PF-udu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="AUh-Lt-4sh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WXp-PF-udu" secondAttribute="trailing" constant="40" id="X9b-of-dux"/>
+                            <constraint firstItem="WXp-PF-udu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AUh-Lt-4sh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WXp-PF-udu" secondAttribute="trailing" constant="20" id="X9b-of-dux"/>
                             <constraint firstItem="WXp-PF-udu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="f4k-1a-7tB"/>
                             <constraint firstItem="vMu-Hc-jEx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pu8-ca-tay"/>
                         </constraints>
