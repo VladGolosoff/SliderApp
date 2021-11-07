@@ -24,22 +24,26 @@ class ViewController: UIViewController {
         greenSlider.value = 1
         blueSlider.minimumTrackTintColor = .blue
         blueSlider.value = 1
-        redLabel.text = "Red: \(redSlider.value)"
-        greenLabel.text = "Green: \(greenSlider.value)"
-        blueLabel.text = "Blue: \(blueSlider.value)"
+        redLabel.text = "R: " + String(format: "%.2F", redSlider.value)
+        greenLabel.text = "G: " + String(format: "%.2F", greenSlider.value)
+        blueLabel.text = "B: " + String(format: "%.2F", blueSlider.value)
         viewColor.layer.cornerRadius = 10
     }
     @IBAction func sliderAction(_ sender: UISlider) {
-        redLabel.text = "Red: \(redSlider.value)"
-        greenLabel.text = "Green: \(greenSlider.value)"
-        blueLabel.text = "Blue: \(blueSlider.value)"
+        redLabel.text = "R: " + String(format: "%.2F", redSlider.value)
+        greenLabel.text = "G: " + String(format: "%.2F", greenSlider.value)
+        blueLabel.text = "B: " + String(format: "%.2F", blueSlider.value)
 
         let red = CGFloat(redSlider.value/1)
         let green = CGFloat(greenSlider.value/1)
         let blue = CGFloat(blueSlider.value/1)
-        viewColor.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: 1)
+        viewColor.backgroundColor = UIColor(red: red,
+                                            green: green,
+                                            blue: blue,
+                                            alpha: 1)
         }
     
+  
     }
     
 
